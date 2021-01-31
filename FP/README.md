@@ -35,3 +35,13 @@
 
 	> ' https://docs.python.org/pt-br/3/library/functions.html '
 
+### Ciclos 
+
+##### Utilização de :
+
+	> For : Quando é conhecido o número de iterações 
+	> While : Quando o número de iterações necessárias é desconhecido
+
+### Classes
+
+##### __repr__ : metodo que visa obter 1 única representação do objeto
