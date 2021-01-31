@@ -1,18 +1,18 @@
-# Teoria - FP Exame
-
-### Algoritmia
-
-> ##### __Algoritmo :__ Um algoritmo é uma sequência finita de instruções bem definidas e não ambíguas cada uma das quais pode ser executada mecanicamente num período de tempo finito e com uma quantidade de esforço finito.
->> Características de um algoritmo : rigoroso, eficaz e finito
->> Relação algoritmo - programa : um programa é um algoritmo escrito numa linguagem de programação 
->> Relação processo - programa : Um processo corresponde ao conjunto de ações tomadas por um computador durante a execução de um programa.
-
-> ##### Programa : Algoritmo escrito numa linguagem de programação.
-
-> ##### Processo Computacional : ente imaterial que existe no interior de um computador durante a execução de um programa, cuja evolução é ditada pelo proprio.
-
-### Abstração
-
+># Teoria - FP Exame
+>
+>### Algoritmia
+>
+>##### __Algoritmo :__ Um algoritmo é uma sequência finita de instruções bem definidas e não ambíguas cada uma das quais pode ser executada mecanicamente num período de tempo finito e com uma quantidade de esforço finito.
+>>Características de um algoritmo : rigoroso, eficaz e finito
+>>Relação algoritmo - programa : um programa é um algoritmo escrito numa linguagem de programação 
+>>Relação processo - programa : Um processo corresponde ao conjunto de ações tomadas por um computador durante a execução de um programa.
+>
+>##### Programa : Algoritmo escrito numa linguagem de programação.
+>
+>##### Processo Computacional : ente imaterial que existe no interior de um computador durante a execução de um programa, cuja evolução é ditada pelo proprio.
+>
+>### Abstração
+>
 ##### **Abstração :** Consiste em ignorar certos aspectos de uma entidade, considerando apenas os aspectos relevantes.
 ##### **Abstração Procedimental :** Consiste em considerar o que um programa faz e ignorar o modo como o faz.
 ##### **Abstração de Dados :** Consiste em considerar as propriedades de um tipo de dados, ignorando o modo como este é representado.
