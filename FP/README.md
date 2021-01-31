@@ -15,12 +15,12 @@
 
 ### Algoritmia
 
-##### *Algoritmo*: Um algoritmo é uma sequência finita de instruções bem definidas e não ambíguas cada uma das quais pode ser executada mecanicamente num período de tempo finito e com uma quantidade de esforço finito.
+##### *Algoritmo* : Um algoritmo é uma sequência finita de instruções bem definidas e não ambíguas cada uma das quais pode ser executada mecanicamente num período de tempo finito e com uma quantidade de esforço finito.
 >1. Características de um algoritmo : rigoroso, eficaz e finito
 >2. Relação algoritmo - programa : um programa é um algoritmo escrito numa linguagem de programação 
 >3. Relação processo - programa : Um processo corresponde ao conjunto de ações tomadas por um computador durante a execução de um programa.
 
-##### *Programa*: Algoritmo escrito numa linguagem de programação.
+##### *Programa* : Algoritmo escrito numa linguagem de programação.
 >Fases de Desenvolvimento de um Programa:
 >>1. Análise do problema
 >>2. Desenvolvimento da solução
@@ -28,7 +28,7 @@
 >>4. Testes
 >>5. Manutenção
 
-##### *Processo Computacional*: ente imaterial que existe no interior de um computador durante a execução de um programa, cuja evolução é ditada pelo proprio - define a execução do programa.
+##### *Processo Computacional* : ente imaterial que existe no interior de um computador durante a execução de um programa, cuja evolução é ditada pelo proprio - define a execução do programa.
 
 ### Abstração
 
@@ -54,7 +54,7 @@
 ### Recursão 
 
 ##### *Recursão linear* : chamada repetida da pópria função (expansão de memória) que cria operações adiadas até atingir o caso terminal.
-##### *Recursão de cauda* : O cálculo é realizado antes da chamada recursiva, passando os resultados da etapa atual para a seguinte. A chamada recursiva é a última operação realizada pela função, __não existindo operações adiadas__ .
+##### *Recursão de cauda* : O cálculo é realizado antes da chamada recursiva, passando os resultados da etapa atual para a seguinte. A chamada recursiva é a última operação realizada pela função, não existindo operações adiadas.
 
 ### Operações Básicas
 >1. Construtores : cosntroem novos elementos do tipo
@@ -83,5 +83,5 @@
 >>While : Quando o número de iterações necessárias é desconhecido
 
 ### Classes
->__repr__ : metodo que visa obter 1 única representação do objeto
+>'__repr__' : metodo que visa obter 1 única representação do objeto
  
