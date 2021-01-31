@@ -195,7 +195,7 @@ def reconhece(cad):
 print(reconhece('acedb'))'''
 
 '''
-9- '''
+9- 
 def junta(d1, d2):
 	d1_d2 = {}
 	val = []
@@ -213,7 +213,103 @@ def junta(d1, d2):
 d1 = {'g': [12, 1], 'z': [5], 'a':[98, 32]}
 d2 = {'f':[3], 'g':[33, 44]}
 
-print(junta(d1, d2))
+print(junta(d1, d2)) '''
+
+'''
+10-
+
+class fila_2_p:
+
+	def __init__(self):
+		self.normal = []
+		self.urgente = []
+
+	def inicio(self):
+		if self.normal == [] and self.urgente == []:
+			raise ValueError('inicio : listas vazias')
+		elif self.urgente != []:
+			return self.urgente[0]
+		else:
+			return self.normal[0]
+
+	def comprimento(self, tipo):
+		if tipo == 'normal':
+			return len(self.normal)
+		elif tipo == 'urgente':
+			return len(self.urgente)
+		else:
+			raise ValueError('comprimento: tipo invalido')
+
+	def coloca(self, tipo, elem):
+		if tipo == 'normal':
+			self.normal += [elem]
+		elif tipo == 'urgente':
+			self.urgente += [elem]
+		else:
+			raise ValueError('coloca: tipo invalido')
+
+	def retira(self):
+		if self.urgente != []:
+			del(self.urgente[0])
+			return self
+		elif self.normal != []:
+			del(self.normal[0])
+			return self
+		else:
+			raise ValueError('retira: listas vazias')
+
+	def aumenta_prioridade(self):
+		if self.normal == []:
+			return self
+		else:
+			priority = self.normal[0]
+			del(self.normal[0])
+			self.urgente += [priority]
+			return self
+
+	def fila_vazia(self, tipo):
+		if tipo == 'normal':
+			return self.normal == []
+		elif tipo == 'urgente':
+			return self.urgente == []
+		else:
+			raise ValueError('fila_vazia: tipo invalido')
+
+	def fila_para_listas(self):
+		return (self.urgente, self.normal)
+
+	def filas_iguais(self, other):
+		fo = other.fila_para_listas
+		return self.urgente == fo[0] and self.normal == fo[1]
+
+	def __repr__(self):
+		def rep_fila(f):
+			r = '<'
+			for elem in f:
+				r += str(elem) + ','
+			r += '>'
+			return r
+		return 'urgente :' + rep_fila(self.urgente) + ';' + 'normal :' + rep_fila(self.normal) '''
+
+'''
+-------------------------------- Exame 2018 / 31 Jan -----------------------------------------
+'''
+
+'''
+2-
+
+def inverte(num):
+	res, dig = 0, 0
+	while num != 0:
+		dig = num % 10
+		res = res * 10 + dig
+		num //= 10
+	return res 
+
+print(inverte(12345))'''
+
+
+
 
 
 
