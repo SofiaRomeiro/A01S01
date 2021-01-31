@@ -13,10 +13,10 @@
 
 >### Abstração
 >
-##### **Abstração :** Consiste em ignorar certos aspectos de uma entidade, considerando apenas os aspectos relevantes.
-##### **Abstração Procedimental :** Consiste em considerar o que um programa faz e ignorar o modo como o faz.
-##### **Abstração de Dados :** Consiste em considerar as propriedades de um tipo de dados, ignorando o modo como este é representado.
-##### **Barreiras de Abstração :** Impedem qualquer acesso aos elementos do tipo que não seja feito através de operações básicas.
+>>##### **Abstração :** Consiste em ignorar certos aspectos de uma entidade, considerando apenas os aspectos relevantes.
+>>##### **Abstração Procedimental :** Consiste em considerar o que um programa faz e ignorar o modo como o faz.
+>>##### **Abstração de Dados :** Consiste em considerar as propriedades de um tipo de dados, ignorando o modo como este é representado.
+>>##### **Barreiras de Abstração :** Impedem qualquer acesso aos elementos do tipo que não seja feito através de operações básicas.
 
 >### Maths 
 >
