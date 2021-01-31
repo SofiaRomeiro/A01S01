@@ -5,12 +5,13 @@
 >2. *Simbolos terminais*
 >3. *Simbolo inicial*
 >Regras de produção:
->>1. ::= -> define simb. ñ term.
->>2. | -> possiveis alternativas
->>3. + -> 1 ou mais repetições
->>4. * -> 0 ou mais repetições
->>5. {} -> simbolos opcionais
->[Gramática de Pyhton 3](https://docs.python.org/3/reference/grammar.html)
+>>1. ' ::= ' -> define simb. ñ term.
+>>2. ' | ' -> possiveis alternativas
+>>3. ' + ' -> 1 ou mais repetições
+>>4. ' *  ' -> 0 ou mais repetições
+>>5. '{ }' -> simbolos opcionais
+
+>*Mais info* :[Gramática de Pyhton 3](https://docs.python.org/3/reference/grammar.html)
 
 ### Algoritmia
 
@@ -67,6 +68,7 @@
 ### Funções Embutidas e Métodos:
 >count() : atua sobre listas
 >random() : gera um n entre 0 <= n < 1
+
 >*Mais info* : [Functions](https://docs.python.org/pt-br/3/library/functions.html)
 
 
