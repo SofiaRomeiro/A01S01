@@ -308,10 +308,135 @@ def inverte(num):
 
 print(inverte(12345))'''
 
+'''
+3-
+def remove_repetidos(lst):
+	newlst = []
+	for l in lst:
+		if l not in newlst:
+			newlst += [l]
+	return newlst
+
+print(remove_repetidos([2,4,3,2,2,2,3]))'''
+
+'''
+4- 
+def num_occ_lista(lst, num):
+	if lst == []:
+		return 0
+	elif type(lst[0]) == list:
+		return num_occ_lista(lst[0], num) + num_occ_lista(lst[1:], num)
+	elif lst[0] == num:
+		return 1 + num_occ_lista(lst[1:], num)
+	else:
+		return num_occ_lista(lst[1:], num)
+
+print(num_occ_lista([1, [[[1]], 2], [[[2]]], 2], 2))'''
+
+'''
+5-
+
+a)
+def soma_fn_il(n, fn):
+	soma = 0
+	for x in range(1, n + 1):
+		soma += fn(x)
+	return soma
+
+def soma_fn_ropa(n, fn):
+	if n == 0:
+		return 0 # a funcao conta entre 1 e n 
+	else:
+		return fn(n) + soma_fn(n - 1, fn)
+
+def soma_fn_rc(n, fn):
+	def soma_fn_aux(n, res):
+		if n == 0:
+			return res
+		else:
+			return soma_fn_aux(n - 1, fn(n) + res)
+	return soma_fn_aux(n, 0)
 
 
+print(soma_fn(4, lambda x: x * x))'''
+
+'''
+6-
+def conta_pares(lst):
+	return len(filter(lambda x: x % 2== 0, lst))
+
+print(conta_pares([1, 2, 3, 4, 5, 6]))'''
+
+'''
+7-
+def reconhece(cad):
+	simb = ['+', '-', '*', '/']
+	nums = ['0','1','2','3','4','5','6','7','8','9']
+	count_si, count_sp = 0, 0
 
 
+	if cad[0] != '(' or cad[-1] != ')':
+		return False
+	for s in range(1, len(cad) - 1):
+		if cad[s] in (simb + nums) or cad[s] == ' ':
+			if cad[s] in simb:
+				count_si += 1
+			elif cad[s] == ' ':
+				count_sp += 1
+		else:
+			return False
+
+	return count_si == 1 and count_sp == 2
+
+print(reconhece('(24 * 00006)'))'''
+
+'''
+9-
+def cria_produto(nome, preco):
+	if type(nome) != str or preco <= 0 or type(preco) != float:
+		raise ValueError('cria_produto: dados invalidos')
+	return {'nome': nome, 'valor': preco}
+
+def nome(produto):
+	return produto['nome']
+
+def preco(produto):
+	return produto['valor']
+
+def eh_produto(arg):
+	return type(arg) == dict and len(arg) == 2 and type(arg['nome']) == str \
+	and type(arg['valor']) == float and arg['valor'] > 0 and 'nome' in arg and \
+	'valor' in arg
+
+def produtos_iguais(p1, p2):
+	return p1['nome'] == p2['nome'] and p1['valor'] == p2['valor']
+
+def mais_caro(p1, p2):
+	return p1['valor'] > p2['valor']
+
+def preco_produtos(lst):
+	tot = 0
+	for prod in lst:
+		tot += preco(prod[0]) * prod[1]
+	return tot'''
+
+'''
+10-
+def resumo_fp(notas_d):
+	n_pos, n_neg, tot_notas_p, len_notas = 0, 0, 1, 0
+
+	for nota in notas_d:
+		len_notas = len(notas_d[nota])
+		if nota < 10:
+			n_neg += len_notas
+		else:
+			n_pos += len_notas
+			tot_notas_p += (nota * len_notas)
+
+	return (tot_notas_p / n_pos, n_neg)
+
+notas_d = {1 : [96592, 99212, 90300, 99312], 15 : [92592, 99212], 20 : [98323]}
+print(resumo_fp(notas_d)) '''
 
 
 '''
@@ -352,34 +477,25 @@ def conta_palavras(pred):
 		word = ''
 		lst_keys = []
 
-
 		for n in range(len(pred)):
-
 			if ord(pred[n]) != ord(' '):
 				word += pred[n]
-
 				if (n + 1) < (len(pred)) and (ord(pred[n + 1]) == ord(' ') or (n + 1) == len(pred)):
 					lst_keys += [word]
 					word = '' 
 
-
 		lst_keys = pred.split()
 		return lst_keys	
 
-	def keys_counter(pred): 
-
+	def keys_counter(pred):
 		dict_keys = {}
-
 		keys = keys_maker(pred)
-
 		for key in keys:
 			if not key in dict_keys:
 				dict_keys[key] = keys.count(key)
 			else:
 				dict_keys = dict_keys
-
 		return dict_keys
-
 	return keys_counter(pred)
 
 cc = 'a aranha arranha a ra a ra arranha a aranha nem a aranha arranha a ra nem a ra arranha a aranha'

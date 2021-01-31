@@ -34,6 +34,7 @@
 ### Funções Embutidas:
 
 	> ' https://docs.python.org/pt-br/3/library/functions.html '
+	> count() : atua sobre listas
 
 ### Ciclos 
 
@@ -45,3 +46,6 @@
 ### Classes
 
 ##### __repr__ : metodo que visa obter 1 única representação do objeto
+
+### Metodos
+	> random() : gera um n entre 0 <= n < 1 
