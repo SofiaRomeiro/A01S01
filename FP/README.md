@@ -54,7 +54,7 @@
 
 ### Funções Embutidas:
 >	[Functions](https://docs.python.org/pt-br/3/library/functions.html)
->count() : atua sobre listas
+>>count() : atua sobre listas
 
 ### Ciclos 
 >##### Utilização de :
