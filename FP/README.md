@@ -70,7 +70,7 @@
 
 ### Operações Básicas
 >1. Construtores : cosntroem novos elementos do tipo
->##### - *Nota* : À partida, são os únicos que verificam os argumentos 
+>>#####  *Nota* : À partida, são os únicos que verificam os argumentos 
 >2. Seletores : permitem aceder aos constituintes dos elementos do tipo 
 >3. Reconhecedores : identificam elementos do tipo
 >4. Testes : efetuam comparações entre os elementos do tipo
@@ -84,5 +84,6 @@
 
 ### Classes
 >Metodo que visa obter 1 única representação do objeto:
+>
 	def __ repr__(self) 
  
