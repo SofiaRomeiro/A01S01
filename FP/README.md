@@ -45,6 +45,7 @@
 
 >#### *Strings / Slicing* 
 >>Inverter string:
+>
 	string[::-1]
 >
 >#### *Utilização de ciclos* :
