@@ -438,10 +438,89 @@ def resumo_fp(notas_d):
 notas_d = {1 : [96592, 99212, 90300, 99312], 15 : [92592, 99212], 20 : [98323]}
 print(resumo_fp(notas_d)) '''
 
+'''
+-------------------------------- Exame 2018 / 18 Jan ----------------------------------------
+'''
+'''
+2-
+def h_m_s(num):
+	h = int(num // 3600)
+	num -= 3600 * h
+	m = int(num // 60)
+	num -= 60 * m
+	return (h, m, num) 
+
+print(h_m_s(62))'''
+
+'''
+3-
+def codifica(num):
+	cod, i = 0, 0
+	while num != 0:
+		dig = num % 10
+		if dig % 2 == 0:
+			cod += ((dig + 2) % 10) * 10 ** i
+		else:
+			cod += ((dig - 2) % 10) * 10 ** i
+		num //= 10
+		i += 1
+	return cod
+
+print(codifica(181))'''
+
+
+
+
+
+
+
+
 
 '''
 -------------------------------- Exame 2020 / 9 Jan -----------------------------------------
 '''
+'''
+5-
+
+def junta_ordenados(t1, t2):
+
+	def inversor(t):
+		t_inv = ()
+		for n in range(len(t) - 1, -1, -1):
+			t_inv += (t[n],)
+		return t_inv
+
+	t2_cres = inversor(t2) #ordem crescente
+
+	i1, i2 = 0, 0
+	junta = ()
+	
+	while i1 < len(t1) and i2 < len(t2_cres):
+		if t1[i1] < t2_cres[i2]:
+			junta += (t1[i1],)
+			i1 += 1
+		elif t2_cres[i2] < t1[i1]:
+			junta += (t2_cres[i2],)
+			i2 += 1
+		else:
+			junta += (t1[i1],)
+			i1 += 1
+			i2 += 2
+
+	if i1 == len(t1) and i2 != len(t2_cres):
+		while i2 < len(t2_cres):
+			junta += (t2_cres[i2],)
+			i2 += 1
+	elif i2 == len(t2) and i1 != len(t1_cres):
+		while i1 < len(t1):
+			junta += (t1[i1],)
+			i1 += 1
+	else:
+		return junta
+
+	return junta
+
+print(junta_ordenados((5, 6, 23, 45), (90, 67, 56, 34, 24, 6, 1)))'''
 '''
 6- 
 
@@ -501,10 +580,27 @@ def conta_palavras(pred):
 cc = 'a aranha arranha a ra a ra arranha a aranha nem a aranha arranha a ra nem a ra arranha a aranha'
 print(conta_palavras(cc))
 '''
+'''
+9-
+def val_serie(x):
+	total, termo, i_termo = 0, 1, 0
+	while termo >= 0.001:
+		total += termo
+		i_termo += 1
+		termo  *= (x / i_termo)'''
 
+'''
+-------------------------------- Random Tasks -----------------------------------------
+'''
+'''
+def parte(lst, num):
+	def parte_aux(lst, lst_1, lst_2, num):
+		if len(lst) == 0:
+			return lst_1, lst_2
+		elif lst[0] < num:
+			return parte_aux(lst[1:], lst_1 + [lst[0]], lst_2, num)
+		else:
+			return parte_aux(lst[1:], lst_1, lst_2 + [lst[0]], num) 
+	return list(parte_aux(lst, [], [], num))
 
-
-
-
-
-
+print(parte([3,5,1,4,5,8,9], 4))'''
