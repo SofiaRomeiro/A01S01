@@ -1,10 +1,14 @@
 # Teoria - FP Exame
 
 ## LINKS 
->####Sala 3 : [Zoom](https://videoconf-colibri.zoom.us/j/81089901408?pwd=eGd6Zy80MjZuZkhXT0NhWUwyVGhJdz09)
->>####Bloco 1 : [Enunciado](https://www.hlt.inesc-id.pt/~alberto/fp/e1/parte1/ist198968.pdf)
->>####Bloco 2 : [Enunciado](https://www.hlt.inesc-id.pt/~alberto/fp/e1/parte2/ist198968.pdf)
->>####Bloco 3 : [Enunciado](https://www.hlt.inesc-id.pt/~alberto/fp/e1/parte3/ist198968.pdf)
+>#### Sala 3 : [Zoom](https://videoconf-colibri.zoom.us/j/81089901408?pwd=eGd6Zy80MjZuZkhXT0NhWUwyVGhJdz09)
+>
+>>#### Bloco 1 : [Enunciado](https://www.hlt.inesc-id.pt/~alberto/fp/e1/parte1/ist198968.pdf)
+>>
+>>#### Bloco 2 : [Enunciado](https://www.hlt.inesc-id.pt/~alberto/fp/e1/parte2/ist198968.pdf)
+>>
+>>#### Bloco 3 : [Enunciado](https://www.hlt.inesc-id.pt/~alberto/fp/e1/parte3/ist198968.pdf)
+
 ### BNF
 >1. *Simbolos nao terminais* : entre < >
 >2. *Simbolos terminais*
