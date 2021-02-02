@@ -64,9 +64,10 @@
 
 ### Funcionais sobre listas
 >Modo de apresentação:
-	reduce(<function>, <lista>)
-	filter(<predicado>, <lista>)
-	map(<function>, <lista>)
+>
+	reduce(function, lista>
+	filter(predicado, lista)
+	map(function, lista)
 
 ### Abstração
 
