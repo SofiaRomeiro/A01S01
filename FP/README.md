@@ -1,5 +1,10 @@
 # Teoria - FP Exame
 
+## LINKS 
+>####Sala 3 : [Zoom](https://videoconf-colibri.zoom.us/j/81089901408?pwd=eGd6Zy80MjZuZkhXT0NhWUwyVGhJdz09)
+>>####Bloco 1 : [Enunciado](https://www.hlt.inesc-id.pt/~alberto/fp/e1/parte1/ist198968.pdf)
+>>####Bloco 2 : [Enunciado](https://www.hlt.inesc-id.pt/~alberto/fp/e1/parte2/ist198968.pdf)
+>>####Bloco 3 : [Enunciado](https://www.hlt.inesc-id.pt/~alberto/fp/e1/parte3/ist198968.pdf)
 ### BNF
 >1. *Simbolos nao terminais* : entre < >
 >2. *Simbolos terminais*
@@ -33,6 +38,14 @@
 operações que se aplicam a esses elementos.
 
 #### *Processo Computacional* : ente imaterial que existe no interior de um computador durante a execução de um programa, cuja evolução é ditada pelo proprio - define a execução do programa.
+
+### F Strings
+>#### Método str.format(), sintaxe:
+>
+	f'Hello, my name is {name} and I'm {years} old. 
+>
+>>##### Em que {name} e {years} sao variaveis 
+>>##### *Mais info* : [F-strings](https://realpython.com/python-f-strings/)
 
 ### Maths 
 

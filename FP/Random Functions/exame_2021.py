@@ -675,6 +675,18 @@ def junta_ordenados(t1, t2):
 
 print(junta_ordenados((5, 6, 23, 45), (90, 67, 56, 34, 24, 6, 1)))'''
 
+'''
+7- 
+def soma_cumulativa(lista):
+	nlista = []
+	n = 0
+	for x in range(len(lista)):
+		nlista += [lista[x] + n]
+		n = nlista[x]
+	return nlista
+print(soma_cumulativa([1, 2, -7, 8, 10]))'''
+
+
 
 '''
 8-
@@ -716,6 +728,102 @@ def val_serie(x):
 		total += termo
 		i_termo += 1
 		termo  *= (x / i_termo)'''
+
+'''
+-------------------------------- Exame 2020 / 31 Jan -----------------------------------------
+'''
+'''
+3-
+def triangular(n):
+	i = 0
+	soma = 0
+	while i != n:
+		soma += i
+		if soma == n:
+			return True
+		i += 1
+	return False'''
+
+'''
+4- 
+def eh_bissexto(n):
+	return n % 4 == 0 and (n % 100 != 0 or n % 400 == 0)'''
+
+'''
+5- 
+def explode(num):
+	res = ()
+	while num != 0:
+		res += (num % 10, )
+		num //= 10
+	return res[::-1]
+
+print(explode(34500))'''
+
+'''
+6-
+
+def reconhece(cad):
+	if cad[0] != 'a' or cad[-1] != 'a' or len(cad) < 3:
+		return False
+	b, a= 0, 0
+	for x in cad:
+		if x == 'a':
+			a += 1
+		elif x == 'b':
+			b += 1
+	if len(cad) != a + b or b != 1 or a % 2 != 0:
+		return False
+	return True'''
+
+'''
+7-
+def eh_perfeito(num):
+	soma = 0
+	for x in range(1, num):
+		if num % x == 0:
+			soma += x
+	return soma == num
+
+def primeiros_n_perfeitos(n):
+	t = ()
+	i = 1
+	while len(t) != n:
+		if eh_perfeito(i):
+			t += (i,)
+		i += 1
+	return t
+
+print(eh_perfeito(6))
+print(primeiros_n_perfeitos(4))'''
+
+'''
+8-
+def junta(d1, d2):
+	nd, nl = {}, []
+	for key in d1:
+		if key in d2:
+			nd[key] = d1[key] + d2[key]
+		else:
+			nd[key] = d1[key]
+	for key in d2:
+		if key not in nd:
+			nd[key] = d2[key]
+	for key in nd:
+		for x in nd[key]:
+			if x not in nl:
+				nl += [x]
+				print(nl)
+		nd[key] = nl
+		nl = []
+	return nd'''
+
+'''
+9- '''
+
+
+
+
 
 '''
 -------------------------------- Random Tasks -----------------------------------------
