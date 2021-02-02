@@ -29,6 +29,9 @@
 >>4. Testes
 >>5. Manutenção
 
+#### *Tipo de dados* : Um conjunto de elementos (as constantes do tipo), juntamente com um conjunto de
+operações que se aplicam a esses elementos.
+
 #### *Processo Computacional* : ente imaterial que existe no interior de um computador durante a execução de um programa, cuja evolução é ditada pelo proprio - define a execução do programa.
 
 ### Maths 
@@ -42,6 +45,9 @@
 	num % i == 0 for i in range(1, num + 1)
 
 ### Elementos básicos de programação
+
+>#### Dicionários:
+>>*Não permitem* repetição de keys
 
 >#### *Strings / Slicing* 
 >>Inverter string:
@@ -84,6 +90,9 @@
 >4. Testes : efetuam comparações entre os elementos do tipo
 
 ### Métodos:
+>*Objeto* : Uma entidade com estado interno (um conjunto de nomes), o qual só pode ser acedido
+por um conjunto de operações definidas dentro do objeto (os métodos). 
+
 >count() : atua sobre listas
 >
 >random() : gera um n entre 0 <= n < 1

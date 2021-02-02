@@ -601,15 +601,39 @@ def todos_lista(lst, pred):
 
 print(todos_lista([4, 5, 6], lambda x: x >= 4))'''
 
-
-
-
-
 '''
 -------------------------------- Exame 2020 / 9 Jan -----------------------------------------
 '''
 '''
+4-
+def codifica(n):
+	newn = 0
+	while n != 0:
+		dig = n % 10
+		if dig % 2 == 0:
+			newn = newn * 10 + ((dig + 8) % 10)
+		else:
+			newn = newn * 10 + ((dig + 12) % 10)
+		n //= 10
+	return newn
+
+print(codifica(2095))'''
+
+'''
 5-
+#recursao:
+
+def junta_ordenados(t1, t2):
+	if t1 == ():
+		return t2[::-1]
+	elif t2 == ():
+		return t1
+	elif t1[0] > t2[-1]:
+		return (t2[-1],) + junta_ordenados(t1, t2[:-1])
+	else:
+		return (t1[0],) + junta_ordenados(t1[1:], t2)
+
+#iteracao:
 
 def junta_ordenados(t1, t2):
 
@@ -709,3 +733,30 @@ def val_serie(x):
 	return parte_aux(lst, [], [], num)
 
 print(parte([3,5,1,4,5,8,9], 4))'''
+
+'''
+def reduzir_por_chave(lst):
+	nlst = []
+	dic = {}
+	for x in range(len(lst)):
+		if lst[x][0] in dic:
+			dic[(lst[x][0])] += lst[x][1]
+		else:
+			dic[(lst[x][0])] = lst[x][1]
+
+	for x in dic:
+		nlst += [(x, dic[x])]
+
+	return nlst
+
+print(reduzir_por_chave([('abc', 3), ('xxx', 5), ('abc', 10), ('xxx', 20)]))'''
+
+'''
+def espelho(n):
+	def esp_aux(num, n):
+		if n == 0:
+			return num
+		return esp_aux(num * 10 + n % 10, n // 10)
+	return esp_aux(0, n)
+
+print(espelho(391))'''
