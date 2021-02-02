@@ -468,9 +468,138 @@ def codifica(num):
 
 print(codifica(181))'''
 
+'''
+4-
+from random import random 
 
+def euromilhoes():
+	def ordenar(lst):
+		return sorted(lst)
 
+	def gerador(max_val, size):
+		lc = []
+		while len(lc) != size:
+			key = int(random() * max_val) + 1
+			if key not in lc:
+				lc += [key]
+		return ordenar(lc)
+	return [gerador(50, 5), gerador(12, 2)]
 
+print(euromilhoes())'''
+
+'''
+5-
+a)
+def triangular(n):
+	soma, i = 0, 1
+	while i < n:
+		soma += i
+		i += 1
+		if soma == n:
+			return True
+	return False
+
+b)
+def nesimo_triangular(n):
+	i = 2
+	triangulares = []
+	while len(triangulares) != 5:
+		if triangular(i):
+			triangulares += [i]
+		i += 1
+	return triangulares[n-1]
+
+print(nesimo_triangular(5))'''
+
+'''
+6- 
+def reconhece(pred):
+	letters = range(ord('A'), ord('D') + 1)
+	nums = range(ord('1'), ord('4') + 1)
+
+	def eh_extremo(pred):
+		return ord(pred[0]) in letters and ord(pred[-1]) in letters and ord(pred[1]) in nums
+
+	def eh_seq(pred):
+		seq = 0
+		if eh_extremo(pred):
+			for i in range(1, len(pred)):
+				if ord(pred[i]) in nums:
+					if (i + 1) <= len(pred) and ord(pred[i + 1]) in letters:
+						seq += 1
+					else:
+						seq += 0
+			return seq < 2
+		return False
+
+	return eh_extremo(pred) and eh_seq(pred)
+
+print(reconhece('A1ABC'))'''
+
+'''
+7- 
+def codifica(cad):
+	return cad[::2] + cad[1::2]
+
+def descodifica(cad):
+	mid = int(len(cad) / 2)
+	impares = cad[0:mid + 1:1]
+	pares = cad[mid + 1::1]
+	fin = ''
+	if len(impares) == len(pares):
+		for i in range(len(pares)):
+			fin += (impares[i] + pares[i])
+	else:
+		for i in range(len(pares)):
+			fin += (impares[i] + pares[i])
+		fin += impares[-1]
+	return fin
+
+print(codifica('abcde'))
+a = codifica('abcde')
+print(descodifica(a))'''
+
+'''
+8-
+a)
+def junta_ordenados(t1,t2):
+	t = ()
+	for x in sorted(t1 + t2): 
+		t += (x,)
+	return t
+
+print(junta_ordenados((2, 34, 200, 210), (1, 23)))'''
+
+'''
+b) 
+def junta_ordenados(t1, t2):
+	if t2 == ():
+		return t1
+	elif t1 == ():
+		return t2
+	elif t1[0] < t2[0]:
+		return (t1[0],) + junta_ordenados(t1[1:], t2)
+	else:
+		return (t2[0],) + junta_ordenados(t1, t2[1:])'''
+
+'''
+9-
+def cria_lista_multiplos(n):
+	lst = []
+	for i in range(0, 10):
+		lst += [i * n]
+	return lst
+
+print(cria_lista_multiplos(6))'''
+
+'''
+10-
+from functools import reduce
+
+def todos_lista(lst, pred):
+	return reduce(lambda x, y: x and y, map(pred, lst))
+
+print(todos_lista([4, 5, 6], lambda x: x >= 4))'''
 
 
 
@@ -521,32 +650,8 @@ def junta_ordenados(t1, t2):
 	return junta
 
 print(junta_ordenados((5, 6, 23, 45), (90, 67, 56, 34, 24, 6, 1)))'''
-'''
-6- 
 
-def reconhece(pred):
-	letters = range(ord('A'), ord('D') + 1)
-	nums = range(ord('1'), ord('4') + 1)
 
-	def eh_extremo(pred):
-		return ord(pred[0]) in letters and ord(pred[-1]) in letters and ord(pred[1]) in nums
-
-	def eh_seq(pred):
-		seq = 0
-		if eh_extremo(pred):
-			for i in range(1, len(pred)):
-				if ord(pred[i]) in nums:
-					if (i + 1) <= len(pred) and ord(pred[i + 1]) in letters:
-						seq += 1
-					else:
-						seq += 0
-			return seq < 2
-		return False
-
-	return eh_extremo(pred) and eh_seq(pred)
-
-print(reconhece('A1ABC'))
-'''
 '''
 8-
 
@@ -578,8 +683,7 @@ def conta_palavras(pred):
 	return keys_counter(pred)
 
 cc = 'a aranha arranha a ra a ra arranha a aranha nem a aranha arranha a ra nem a ra arranha a aranha'
-print(conta_palavras(cc))
-'''
+print(conta_palavras(cc))'''
 '''
 9-
 def val_serie(x):
@@ -592,15 +696,16 @@ def val_serie(x):
 '''
 -------------------------------- Random Tasks -----------------------------------------
 '''
-'''
-def parte(lst, num):
+
+'''def parte(lst, num):
 	def parte_aux(lst, lst_1, lst_2, num):
+		#return [lst_1, lst_2] if len(lst) == 0 else parte_aux(lst[1:], lst_1 + [lst[0]], lst_2, num) if lst[0] < num else parte_aux(lst[1:], lst_1, lst_2 + [lst[0]], num)
 		if len(lst) == 0:
 			return lst_1, lst_2
 		elif lst[0] < num:
 			return parte_aux(lst[1:], lst_1 + [lst[0]], lst_2, num)
 		else:
 			return parte_aux(lst[1:], lst_1, lst_2 + [lst[0]], num) 
-	return list(parte_aux(lst, [], [], num))
+	return parte_aux(lst, [], [], num)
 
 print(parte([3,5,1,4,5,8,9], 4))'''
