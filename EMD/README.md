@@ -13,3 +13,10 @@
 >##### *Definição*: O grau de um vértice é o nº de arestas nele incidentes
 >##### *1º Teorema*: A soma dos graus dos nós de um grafo é o dobro do número de arestas => número par
 >>##### *Justificação*: cada aresta é contada 2 vezes  
+
+### Algoritmo de Dijkstra
+>##### Riscar da tabela apenas os vértices 'percorridos'
+>##### Escrever pela ordem que vão aparecendo na 'progressao' do exercicio
+>##### Indicar a ordem pela qual as arestas foram riscadas 
+>##### Custo da trajetória: custo acumulado do percurso até à aresta final
+>##### Indicação da trajetória: < V,V,V,V > 
