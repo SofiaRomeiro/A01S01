@@ -1,7 +1,7 @@
 # EMD
 
 ### Grafos
->##### Constutuidos por nº finito de *vértices* e *arestas*
+>##### Constituidos por nº finito de *vértices* e *arestas*
 >##### Um grafo G é um par G = (V,A) onde
 >>- V - conjunto finito de vértices/ nós
 >>- A - conjunto finito de arestas
