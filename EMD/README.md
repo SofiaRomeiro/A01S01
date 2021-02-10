@@ -4,15 +4,13 @@
 >##### Multiplo: a é multiplo de b:
 >
 	a = k . b (k é inteiro)
->
 
 ### Equações Diofantinas
 >##### Uma equação diofantina:
 >> 1. tem os coeficientes e os termos independentes pertencentes a Z
 >> 2. tem como solução para as variáveis x e y valores em Z
 >> 3. é do tipo ax + by = c em que os coeficientes (a e b) e o termo independente (c) pertencem a Z
-
-
+>> 4. tem solução se c é multiplo de mdc(a,b)
 
 ### Grafos
 >##### Constituidos por nº finito de *vértices* e *arestas*
